@@ -1,0 +1,90 @@
+  menu
+  
+  
+  <div class="navbar">
+       <div class="nav-item"></div>
+  <div class="nav-item"></div>
+  <div class="nav-item"></div>
+  <div class="nav-item"></div>
+  <div class="nav-item"></div>
+  <div class="nav-item"></div>
+  <div class="nav-item"></div>
+        <div class="dropdown" style="float:left;">
+            <button class="dropbtn">menu</button>
+            <div class="dropdown-content" style="left:0;">
+              <a href="#">support and service</a>
+              <a href="#">pricing</a>
+              <a href="#">contact us</a>
+              <a href="#">about us</a>
+            </div>
+          </div> 
+
+
+ body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: pink;
+  }
+ 
+  
+  .navbar {
+    display: grid;
+    grid-template-columns: 40%, 20%, 40%;
+    align-items: center;
+    position: relative;
+  }
+
+  .nav-item {
+  position: relative;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -1px; /* Adjust for the line position */
+  width: 2px;
+  background-color: #000;
+  z-index: -1;
+  height: 100vh;
+}
+
+
+  .dropbtn {
+  color: white;
+  background-color: skyblue;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: skyblue;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+
+.dropdown-content a:hover {background-color: white;color:black}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: white; color: black;}

@@ -1,0 +1,111 @@
+ body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: pink;
+  }
+/* 
+ the above code makes the vertical line and menu
+@keyframes showUnderline {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes showText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.word {
+    display: inline-block;
+    position: relative;
+}
+
+.underline {
+    position: absolute;
+    bottom: -4px;  Adjust this value for spacing 
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+}
+
+.text {
+    opacity: 0;
+}
+
+
+
+@keyframes line-in{
+    0%{
+        opacity:0;-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0)
+    }
+    100%{
+        opacity:1;-webkit-transform:translateZ(0);transform:translateZ(0)}
+    }
+
+  @keyframes showTextFromBottom {
+    0% {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  } */
+
+/* 
+.word {
+-webkit-animation: showTextFromBottom .6s cubic-bezier(.25,.46,.45,.94);
+    animation: showTextFromBottom .6s cubic-bezier(.25,.46,.45,.94);
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    display: inline-block;
+    position: relative;
+}
+
+.line {
+    display: inline;
+    position: relative;
+    text-align: start;
+    white-space: nowrap;
+}
+.line:first-child::after   {
+    animation: none;
+}
+.line:after  {
+    -webkit-animation: line-in .3s cubic-bezier(0,.55,.45,1);
+    animation: line-in .3s cubic-bezier(0,.55,.45,1);
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    background-color: #fff;
+    content: "";
+    height: 4px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    transition: opacity .3s,-webkit-transform .3s;
+    transition: opacity .3s,transform .3s;
+    transition: opacity .3s,transform .3s,-webkit-transform .3s;
+    width: 100%;
+}
+
+.line:first-child .word{
+    animation-delay: 1.5s;
+}
+
+.line:last-child .word{
+
+    animation-delay: 2.5s;
+} */
