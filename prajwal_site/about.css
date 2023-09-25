@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.company-intro {
+    margin-left: 2%;
+    margin-top: 3%;
+    color:white;
+    display: flex;
+    flex-direction: row;
+    gap:7%;
+}
+.company-intro .heading {
+    display: inline;
+    font-size: 20px;
+    padding-top: 0.4em;
+    min-width: 130px;
+}
+.company-intro .text {
+    display: inline;
+    margin-right: 10%;
+    font-size: 30px;
+}
+@media screen and (max-width: 768px) {
+	body {
+		margin: 5px;
+		padding: 5px;
+    }
+    .company-intro {
+        flex-direction: column;
+        
+    }
+    .content .company-intro {
+        display: flex;
+        flex-direction: column;
+    }
+    .company-intro .heading {
+        font-size: 1.5rem;
+    }
+    .company-intro .text {
+        font-size: 1rem;
+    }
+    .company-intro p {
+        width: 100%;
+    }
+}
